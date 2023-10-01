@@ -8,6 +8,9 @@ npm install
 ### Compiles, hot-reloads and database for development
 ```
 npm run serve
+```
+### Database for development
+```
 npm run backend
 ```
 
