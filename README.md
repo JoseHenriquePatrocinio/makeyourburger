@@ -5,7 +5,7 @@
 npm install
 ```
 
-### Compiles,hot-reloads and database for development
+### Compiles, hot-reloads and database for development
 ```
 npm run serve
 npm run backend
