@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p>Componente de mensagem</p>
+        <Message :msg="msg" v-show="msg" />
         <div>
             <form id="burguer-form" @submit="createBurguer">
                 <div class="input-container">
@@ -41,8 +41,12 @@
 </template>
 
 <script>
+import Message from './Message.vue';
 export default {
     name: "BurguerForm",
+    components: {
+        Message
+    },
     data() {
         return {
             paes: null,
@@ -72,21 +76,29 @@ export default {
             e.preventDefault();
 
             const data = {
-                nome:this.nome,
+                nome: this.nome,
                 carne: this.carne,
                 pao: this.pao,
-                opcionais:Array.from(this.opcionais),
+                opcionais: Array.from(this.opcionais),
                 status: "Solicitado"
             }
             const dataJson = JSON.stringify(data);
 
-            const req = await fetch("http://localhost:3000/burgers",{
+            const req = await fetch("http://localhost:3000/burgers", {
                 method: "POST",
-                headers: {"Content-Type": "application/json"},
+                headers: { "Content-Type": "application/json" },
                 body: dataJson
             });
 
             const res = await req.json();
+
+            if (req.status === 201) {
+                this.msg = `Pedido Nº ${res.id} realizado com sucesso!`;             
+            } else {
+                this.msg = `Ouve um erro ao realizar seu pedido`;
+            }
+
+            setTimeout(() => this.msg = "", 3000)
 
             this.nome = "";
             this.carne = "";
