@@ -2,7 +2,7 @@
     <div>
         <Message :msg="msg" v-show="msg" />
         <div>
-            <form id="burguer-form" @submit="createBurguer">
+            <form id="burger-form" @submit="createBurger">
                 <div class="input-container">
                     <label for="nome">Nome do Cliente:</label>
                     <input type="text" id="nome" v-model="nome" placeholder="Digite o seu nome">
@@ -17,7 +17,7 @@
                     </select>
                 </div>
                 <div class="input-container">
-                    <label for="carne">Escolha a carne do seu burguer:</label>
+                    <label for="carne">Escolha a carne do seu burger:</label>
                     <select name="carne" id="carne" v-model="carne">
                         <option value="">Selecione a carne</option>
                         <option v-for="carne in carnes" :key="carne.id" :value="carne.tipo">
@@ -33,7 +33,7 @@
                     </div>
                 </div>
                 <div class="input-container">
-                    <input type="submit" class="submit-btn" value="Criar meu burguer">
+                    <input type="submit" class="submit-btn" value="Criar meu burger">
                 </div>
             </form>
         </div>
@@ -43,7 +43,7 @@
 <script>
 import Message from './Message.vue';
 export default {
-    name: "BurguerForm",
+    name: "BurgerForm",
     components: {
         Message
     },
@@ -72,7 +72,7 @@ export default {
             this.carnes = data.carnes;
             this.opcionaisdata = data.opcionais;
         },
-        async createBurguer(e) {
+        async createBurger(e) {
             e.preventDefault();
 
             const data = {
@@ -115,7 +115,7 @@ export default {
 </script>
 
 <style scoped>
-#burguer-form {
+#burger-form {
     max-width: 400px;
     margin: 0 auto;
 }
