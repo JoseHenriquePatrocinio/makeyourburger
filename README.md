@@ -5,9 +5,10 @@
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compiles,hot-reloads and database for development
 ```
 npm run serve
+npm run backend
 ```
 
 ### Compiles and minifies for production
