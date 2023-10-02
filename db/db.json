@@ -135,21 +135,6 @@
       "id": 7
     },
     {
-      "nome": "Dono",
-      "carne": "Maminha",
-      "pao": "Italiano Branco",
-      "opcionais": [
-        "Bacon",
-        "Salame",
-        "Cebola roxa",
-        "Cheddar",
-        "Tomate",
-        "Pepino"
-      ],
-      "status": "Em produção",
-      "id": 8
-    },
-    {
       "nome": "TesteTestando",
       "carne": "Maminha",
       "pao": "3 Queijos",
