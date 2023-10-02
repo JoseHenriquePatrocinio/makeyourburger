@@ -87,7 +87,7 @@
         "Cebola roxa",
         "Pepino"
       ],
-      "status": "Solicitado",
+      "status": "Finalizado",
       "id": 1
     },
     {
@@ -99,17 +99,6 @@
       ],
       "status": "Solicitado",
       "id": 2
-    },
-    {
-      "nome": "José Henrique",
-      "carne": "Maminha",
-      "pao": "Italiano Branco",
-      "opcionais": [
-        "Cheddar",
-        "Cebola Roxa"
-      ],
-      "status": "Solicitado",
-      "id": 3
     },
     {
       "nome": "Zeca",
@@ -167,7 +156,7 @@
         "Tomate",
         "Pepino"
       ],
-      "status": "Solicitado",
+      "status": "Em produção",
       "id": 8
     },
     {
@@ -199,7 +188,7 @@
       "opcionais": [
         "Salame"
       ],
-      "status": "Solicitado",
+      "status": "Em produção",
       "id": 11
     },
     {
