@@ -91,16 +91,6 @@
       "id": 1
     },
     {
-      "nome": "José Henrique",
-      "carne": "Maminha",
-      "pao": "Italiano Branco",
-      "opcionais": [
-        "Cheddar"
-      ],
-      "status": "Solicitado",
-      "id": 2
-    },
-    {
       "nome": "Zeca",
       "carne": "Picanha",
       "pao": "Italiano Branco",
@@ -108,7 +98,7 @@
         "Salame",
         "Tomate"
       ],
-      "status": "Solicitado",
+      "status": "Finalizado",
       "id": 4
     },
     {
